@@ -5,101 +5,105 @@
   <title>Income Tax Calculation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
       background: url('https://www.thestatesman.com/wp-content/uploads/2022/11/Income-Tax-Department-1.jpg') no-repeat center center fixed;
-      background-size: 300px;
-      background-blend-mode: lighten;
-      animation: fadeIn 1s ease-in;
+      background-size: cover;
+      color: #1a1a1a;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 50, 0.7);
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
     }
     h1 {
       text-align: center;
-      font-size: 28px;
-      color: #2c3e50;
-      animation: slideDown 0.8s ease-out;
+      margin-top: 30px;
+      font-size: 32px;
+      color: #003366;
     }
-    @keyframes slideDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    .subheading {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #444;
     }
-    .container {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
       max-width: 800px;
       margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-    .form-section {
-      flex: 1;
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
     }
     label {
-      display: block;
-      margin-top: 15px;
+      flex: 1;
+      margin-right: 10px;
       font-weight: bold;
     }
     input {
-      width: 100%;
+      flex: 2;
       padding: 8px;
-      margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
     }
     button {
       margin-top: 20px;
       padding: 10px 20px;
-      background: #2c3e50;
+      background-color: #003366;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       cursor: pointer;
-    }
-    .powered-by {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
+      font-weight: bold;
     }
     .footer {
       text-align: center;
-      margin-top: 40px;
+      margin: 40px 0 20px;
       font-size: 14px;
-      color: #777;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="powered-by">
-    <strong>Powered by</strong><br/>
-    <div style="font-weight:bold;">DSK</div>
+  <div class="header">
+    Powered by DSK
   </div>
 
   <h1>Income Tax Calculation</h1>
-  <p style="text-align:center;">Previous Year: 2024–2025</p>
-  <p style="text-align:center;">Assessment Year: 2025–2026</p>
+  <div class="subheading">Previous Year: 2024–2025 | Assessment Year: 2025–2026</div>
 
-  <div class="container">
-    <div class="form-section">
-      <form action="income.html">
+  <div class="form-container">
+    <form action="income.html">
+      <div class="form-row">
         <label>Name:</label><input type="text" name="name" required />
+      </div>
+      <div class="form-row">
         <label>Job Role:</label><input type="text" name="job" required />
+      </div>
+      <div class="form-row">
         <label>Age:</label><input type="number" name="age" required />
+      </div>
+      <div class="form-row">
         <label>Place:</label><input type="text" name="place" required />
+      </div>
+      <div class="form-row">
         <label>Mobile Number:</label><input type="tel" name="mobile" required />
+      </div>
+      <div class="form-row">
         <label>Mail ID:</label><input type="email" name="email" required />
-        <button type="submit">Next</button>
-      </form>
-    </div>
+      </div>
+      <button type="submit">Next</button>
+    </form>
   </div>
 
   <div class="footer">

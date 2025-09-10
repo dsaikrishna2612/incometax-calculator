@@ -5,111 +5,103 @@
   <title>Income from Salary</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px;
-      background: url('https://www.thestatesman.com/wp-content/uploads/2022/11/Income-Tax-Department-1.jpg') no-repeat center center fixed;
-      background-size: 300px;
-      background-blend-mode: lighten;
-      animation: fadeIn 1s ease-in;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #1a1a1a;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 50, 0.7);
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
     }
     h1, h3 {
       text-align: center;
-      color: #2c3e50;
-      animation: slideDown 0.8s ease-out;
+      margin-top: 30px;
+      color: #003366;
     }
-    @keyframes slideDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      max-width: 800px;
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      max-width: 900px;
       margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
     }
     label {
-      display: block;
-      margin-top: 15px;
+      flex: 1;
+      margin-right: 10px;
       font-weight: bold;
     }
     input {
-      width: 100%;
+      flex: 2;
       padding: 8px;
-      margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .powered-by {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
+      border-radius: 5px;
     }
     .footer {
       text-align: center;
-      margin-top: 40px;
+      margin: 40px 0 20px;
       font-size: 14px;
-      color: #777;
+      color: #333;
     }
   </style>
-OAOAOAOAOAOAOA</head>
-OA<body>
-OAOA  <div class="powered-by">
-OAOA    <strong>Powered by</strong><br/>
-OA    <div style="font-weight:bold;">DSK</div>
+</head>
+<body>
+  <div class="header">
+    Powered by DSK
   </div>
-OAOA
-OA  <h1>Income from Salary</h1>
 
-OAOA  <div class="container">
+  <h1>Income from Salary</h1>
+
+  <div class="form-container">
     <!-- Salary Components -->
-    <label>Basic Salary:</label><input type="number" name="basic" />
-OA    <label>Dearness Allowance:</label><input type="number" name="da" />
-OA    <label>Commission:</label><input type="number" name="commission" />
-OA    <label>Bonus:</label><input type="number" name="bonus" />
-OAOA    <label>Advance/Arrears Salary:</label><input type="number" name="advance" />
-OA    <label>Leave Salary:</label><input type="number" name="leave" />
+    <div class="form-row"><label>Basic Salary:</label><input type="number" placeholder="₹0.00" /></div>
+    <div class="form-row"><label>Dearness Allowance:</label><input type="number" placeholder="₹0.00" /></div>
+    <div class="form-row"><label>Commission:</label><input type="number" placeholder="₹0.00" /></div>
+    <div class="form-row"><label>Bonus:</label><input type="number" placeholder="₹0.00" /></div>
+    <div class="form-row"><label>Advance/Arrears Salary:</label><input type="number" placeholder="₹0.00" /></div>
+    <div class="form-row"><label>Leave Salary:</label><input type="number" placeholder="₹0.00" /></div>
 
     <!-- Allowances -->
     <h3>Allowances</h3>
-OA    <label>Transport Allowance:</label><input type="number" name="transport" />
-OA    <label>Children Education Allowance:</label><input type="number" name="education" />
-    <label>Children Hostel Allowance:</label><input type="number" name="hostel" />
-    <label>Travelling/Tour Allowance:</label><input type="number" name="travel" />
-OA    <label>Conveyance Allowance:</label><input type="number" name="conveyance" />
-    <label>Daily Allowance:</label><input type="number" name="daily" />
-    <label>Research/Academy Allowance:</label><input type="number" name="research" />
-    <label>House Rent Allowance (HRA):</label><input type="number" name="hra" />
+    <div class="form-row"><label>Transport Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Children Education Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Children Hostel Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Travelling/Tour Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Conveyance Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Daily Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Research/Academy Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>House Rent Allowance (HRA):</label><input type="number" /></div>
 
     <!-- Perquisites -->
     <h3>Perquisites</h3>
-    <label>Leave Travel Concession:</label><input type="number" name="ltc" />
-    <label>Medical Facility:</label><input type="number" name="medical" />
-OA    <label>Loan:</label><input type="number" name="loan" />
-    <label>Gift:</label><input type="number" name="gift" />
-    <label>ESOP:</label><input type="number" name="esop" />
-    <label>Lunch Facility:</label><input type="number" name="lunch" />
-    <label>Use of Assets (Movable):</label><input type="number" name="use_assets" />
-    <label>Transfer of Assets (Movable):</label><input type="number" name="transfer_assets" />
+    <div class="form-row"><label>Leave Travel Concession:</label><input type="number" /></div>
+    <div class="form-row"><label>Medical Facility:</label><input type="number" /></div>
+    <div class="form-row"><label>Loan:</label><input type="number" /></div>
+    <div class="form-row"><label>Gift:</label><input type="number" /></div>
+    <div class="form-row"><label>ESOP:</label><input type="number" /></div>
+    <div class="form-row"><label>Lunch Facility:</label><input type="number" /></div>
+    <div class="form-row"><label>Use of Assets (Movable):</label><input type="number" /></div>
+    <div class="form-row"><label>Transfer of Assets (Movable):</label><input type="number" /></div>
 
     <!-- Deductions -->
     <h3>Deductions</h3>
-OA    <label>Gross Salary:</label><input type="number" name="gross" />
-    <label>Professional Tax:</label><input type="number" name="ptax" />
-OA    <label>Entertainment Allowance:</label><input type="number" name="entertainment" />
-    <label>Standard Deduction:</label><input type="number" name="standard" />
-
-    <label><strong>Net Taxable Salary:</strong></label>
-    <input type="number" name="net_taxable" />
+    <div class="form-row"><label><strong>Gross Salary:</strong></label><input type="number" /></div>
+    <div class="form-row"><label>Professional Tax:</label><input type="number" /></div>
+    <div class="form-row"><label>Entertainment Allowance:</label><input type="number" /></div>
+    <div class="form-row"><label>Standard Deduction:</label><input type="number" /></div>
+    <div class="form-row"><label><strong>Net Taxable Salary:</strong></label><input type="number" /></div>
   </div>
 
   <div class="footer">
